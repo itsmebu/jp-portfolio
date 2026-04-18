@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <nav class="navbar">
@@ -16,7 +16,7 @@
       <div class="logo">
         <span>JPV</span>parilla
       </div>
-      <!-- Desktop navigation (hidden on mobile) -->
+      <!-- Desktop navigation -->
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -29,17 +29,6 @@
           <i class="fas fa-moon"></i>
         </button>
       </div>
-    </div>
-    <!-- Mobile navigation buttons - visible only on phone -->
-    <div class="mobile-nav-bar">
-      <a href="index.html" class="mobile-nav-btn">Home</a>
-      <a href="objective.html" class="mobile-nav-btn">Objective</a>
-      <a href="skills.html" class="mobile-nav-btn">Skills</a>
-      <a href="projects.html" class="mobile-nav-btn">Projects</a>
-      <a href="contact.html" class="mobile-nav-btn">Contact</a>
-      <button id="mobileDarkToggle" class="mobile-nav-btn dark-toggle-mobile" aria-label="Dark mode">
-        <i class="fas fa-moon"></i> Dark
-      </button>
     </div>
   </nav>
 
@@ -60,6 +49,22 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile navigation - plain text links below header -->
+    <div class="mobile-nav-container">
+      <div class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="objective.html">Objective</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="mobile-dark-toggle-wrapper">
+        <button id="mobileDarkToggle" class="mobile-dark-toggle" aria-label="Dark mode">
+          <i class="fas fa-moon"></i> Dark Mode
+        </button>
+      </div>
+    </div>
 
     <section class="section home-highlight">
       <div class="container">
