@@ -1,5 +1,5 @@
 /* ============================================ */
-/* FILE: style.css - NO HAMBURGER, MOBILE BUTTON BAR */
+/* FILE: style.css - PLAIN TEXT NAV BELOW HEADER */
 /* ============================================ */
 
 * {
@@ -85,7 +85,7 @@ body.dark-mode .objective-statement {
 
 body.dark-mode .btn.primary-btn,
 body.dark-mode .dark-toggle,
-body.dark-mode .dark-toggle-mobile {
+body.dark-mode .mobile-dark-toggle {
   background: #2d5a4b;
   color: #fff;
   border-color: #2d5a4b;
@@ -117,6 +117,19 @@ body.dark-mode .form-group textarea {
 body.dark-mode .form-group input::placeholder,
 body.dark-mode .form-group textarea::placeholder {
   color: #a0b8b8;
+}
+
+body.dark-mode .mobile-nav-container {
+  background: #0e1a1f;
+  border-bottom-color: #1e3a3a;
+}
+
+body.dark-mode .mobile-nav-links a {
+  color: #cbdad6;
+}
+
+body.dark-mode .mobile-nav-links a:hover {
+  color: #8fc1a0;
 }
 
 /* CONTAINER */
@@ -185,7 +198,7 @@ body.dark-mode .form-group textarea::placeholder {
   color: #d0e6d2;
 }
 
-/* DARK TOGGLE */
+/* DARK TOGGLE (Desktop) */
 .dark-toggle {
   background: transparent;
   border: 2px solid #8fc1a0;
@@ -205,74 +218,80 @@ body.dark-mode .form-group textarea::placeholder {
   border-color: #fff;
 }
 
-/* ----- MOBILE NAVIGATION BAR (BUTTONS BELOW HEADER) ----- */
-.mobile-nav-bar {
+/* ----- MOBILE NAVIGATION (BELOW HEADER, PLAIN TEXT, NO BORDERS) ----- */
+.mobile-nav-container {
   display: none;
-  background: #1a2c2c;
-  padding: 0.75rem 1rem;
+  background: #f2f7f3;
+  padding: 1rem 1rem 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid #e3ece4;
+}
+
+.mobile-nav-links {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  border-top: 1px solid #2d5a4b;
-  border-bottom: 1px solid #2d5a4b;
+  gap: 1.5rem 2rem;
+  margin-bottom: 0.8rem;
 }
 
-.mobile-nav-btn {
-  background: transparent;
-  color: #fff;
-  border: 1.5px solid #8fc1a0;
-  padding: 0.5rem 1.2rem;
-  border-radius: 40px;
-  font-size: 0.9rem;
-  font-weight: 500;
+.mobile-nav-links a {
+  color: #1e3a3a;
   text-decoration: none;
-  transition: all 0.2s ease;
-  display: inline-block;
-  white-space: nowrap;
-  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
 }
 
-.mobile-nav-btn:hover {
-  background: #2d5a4b;
-  border-color: #fff;
-  color: #fff;
+.mobile-nav-links a:hover {
+  color: #2d5a4b;
 }
 
-.dark-toggle-mobile {
+.mobile-dark-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-dark-toggle {
   background: transparent;
-  color: #fff;
-  border: 1.5px solid #8fc1a0;
-  padding: 0.5rem 1.2rem;
-  border-radius: 40px;
+  border: none;
+  color: #2d5a4b;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  white-space: nowrap;
+  padding: 0.3rem 1rem;
+  transition: color 0.2s;
 }
 
-.dark-toggle-mobile:hover {
-  background: #2d5a4b;
-  border-color: #fff;
+.mobile-dark-toggle:hover {
+  color: #1e3a3a;
 }
 
-body.dark-mode .mobile-nav-bar {
-  background: #0f1a1a;
-  border-color: #2d5a4b;
+.mobile-dark-toggle i {
+  font-size: 1rem;
 }
 
-body.dark-mode .mobile-nav-btn,
-body.dark-mode .dark-toggle-mobile {
-  border-color: #5f9b8a;
-  color: #e0f0ea;
+body.dark-mode .mobile-nav-container {
+  background: #0e1a1f;
+  border-bottom-color: #1e3a3a;
 }
 
-body.dark-mode .mobile-nav-btn:hover,
-body.dark-mode .dark-toggle-mobile:hover {
-  background: #2d5a4b;
+body.dark-mode .mobile-nav-links a {
+  color: #cbdad6;
+}
+
+body.dark-mode .mobile-nav-links a:hover {
+  color: #8fc1a0;
+}
+
+body.dark-mode .mobile-dark-toggle {
+  color: #8fc1a0;
+}
+
+body.dark-mode .mobile-dark-toggle:hover {
   color: #fff;
 }
 
@@ -512,9 +531,9 @@ body.dark-mode .footer-copyright {
     display: none !important;
   }
 
-  /* Show mobile button bar */
-  .mobile-nav-bar {
-    display: flex !important;
+  /* Show mobile nav below header */
+  .mobile-nav-container {
+    display: block !important;
   }
 
   .nav-container {
@@ -588,15 +607,12 @@ body.dark-mode .footer-copyright {
     font-size: 0.9rem;
   }
 
-  .mobile-nav-btn,
-  .dark-toggle-mobile {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+  .mobile-nav-links {
+    gap: 1rem 1.2rem;
   }
 
-  .mobile-nav-bar {
-    gap: 0.3rem;
-    padding: 0.5rem 0.3rem;
+  .mobile-nav-links a {
+    font-size: 0.9rem;
   }
 
   .footer-social {
