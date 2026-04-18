@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <nav class="navbar">
@@ -16,7 +16,6 @@
       <div class="logo">
         <span>JPV</span>parilla
       </div>
-      <!-- Desktop navigation -->
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -29,6 +28,21 @@
           <i class="fas fa-moon"></i>
         </button>
       </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="objective.html">Objective</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div style="text-align: center; margin-top: 1rem;">
+        <button id="mobileDarkToggle" class="dark-toggle mobile-dark"><i class="fas fa-moon"></i></button>
+      </div>
     </div>
   </nav>
 
@@ -38,10 +52,10 @@
         <div class="profile-text">
           <h1>John Philip V. Parilla</h1>
           <p class="badge">BS Information Technology <span>· 3rd Year</span></p>
-          <p class="tagline">Aspiring Full-Stack Developer | Problem Solver</p>
+          <p class="tagline"></p>
           <div class="home-buttons">
-            <a href="objective.html" class="btn secondary-btn">Career Objective</a>
-            <a href="projects.html" class="btn secondary-btn">Projects</a>
+            <a href="objective.html" class="btn secondary-btn"> Career Objective</a>
+            <a href="projects.html" class="btn secondary-btn"> Projects</a>
           </div>
         </div>
         <div class="profile-image-wrapper">
@@ -64,7 +78,7 @@
             <a href="skills.html" class="btn secondary-btn">View skills →</a>
           </div>
           <div class="home-card">
-            <h3>Projects</h3>
+            <h3>Project</h3>
             <p>NBA Data Analytics · Smart Coffee Shop · Jelas Receipt · Personal Portfolio</p>
             <a href="projects.html" class="btn secondary-btn">See projects →</a>
           </div>
@@ -73,28 +87,8 @@
     </section>
   </main>
 
-  <footer>
+ <footer>
     <div class="container">
-      <!-- Mobile Navigation in Footer (visible only on mobile) -->
-      <div class="mobile-footer-nav">
-        <div class="mobile-footer-links">
-          <a href="index.html">Home</a>
-          <span class="footer-separator">|</span>
-          <a href="objective.html">Objective</a>
-          <span class="footer-separator">|</span>
-          <a href="skills.html">Skills</a>
-          <span class="footer-separator">|</span>
-          <a href="projects.html">Projects</a>
-          <span class="footer-separator">|</span>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="mobile-footer-dark">
-          <button id="mobileDarkToggle" class="mobile-dark-toggle-footer" aria-label="Dark mode">
-            <i class="fas fa-moon"></i> Dark Mode
-          </button>
-        </div>
-      </div>
-
       <div class="footer-content">
         <div class="footer-social">
           <a href="mailto:parillajohnphilip2@gmail.com" class="footer-social-link" aria-label="Email">
@@ -105,10 +99,6 @@
             <i class="fab fa-facebook"></i>
             <span>Facebook</span>
           </a>
-        </div>
-        <div class="footer-copyright">
-        </div>
-      </div>
     </div>
   </footer>
 
