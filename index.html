@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
@@ -28,21 +28,14 @@
           <i class="fas fa-moon"></i>
         </button>
       </div>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-        <i class="fas fa-bars"></i>
-      </button>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <ul class="mobile-nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="objective.html">Objective</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div style="text-align: center; margin-top: 1rem;">
-        <button id="mobileDarkToggle" class="dark-toggle mobile-dark"><i class="fas fa-moon"></i></button>
-      </div>
+    <!-- Mobile navigation as button bar below header (visible only on mobile) -->
+    <div class="mobile-nav-bar" id="mobileNavBar">
+      <a href="index.html" class="mobile-nav-btn">Home</a>
+      <a href="objective.html" class="mobile-nav-btn">Objective</a>
+      <a href="skills.html" class="mobile-nav-btn">Skills</a>
+      <a href="projects.html" class="mobile-nav-btn">Projects</a>
+      <a href="contact.html" class="mobile-nav-btn">Contact</a>
     </div>
   </nav>
 
@@ -87,7 +80,7 @@
     </section>
   </main>
 
- <footer>
+  <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-social">
@@ -99,6 +92,11 @@
             <i class="fab fa-facebook"></i>
             <span>Facebook</span>
           </a>
+        </div>
+        <div class="footer-copyright">
+          © 2024 John Philip V. Parilla
+        </div>
+      </div>
     </div>
   </footer>
 
