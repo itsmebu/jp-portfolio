@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <nav class="navbar">
@@ -50,22 +50,6 @@
       </div>
     </header>
 
-    <!-- Mobile navigation - plain text links below header -->
-    <div class="mobile-nav-container">
-      <div class="mobile-nav-links">
-        <a href="index.html">Home</a>
-        <a href="objective.html">Objective</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="mobile-dark-toggle-wrapper">
-        <button id="mobileDarkToggle" class="mobile-dark-toggle" aria-label="Dark mode">
-          <i class="fas fa-moon"></i> Dark Mode
-        </button>
-      </div>
-    </div>
-
     <section class="section home-highlight">
       <div class="container">
         <div class="home-card-grid">
@@ -91,6 +75,26 @@
 
   <footer>
     <div class="container">
+      <!-- Mobile Navigation in Footer (visible only on mobile) -->
+      <div class="mobile-footer-nav">
+        <div class="mobile-footer-links">
+          <a href="index.html">Home</a>
+          <span class="footer-separator">|</span>
+          <a href="objective.html">Objective</a>
+          <span class="footer-separator">|</span>
+          <a href="skills.html">Skills</a>
+          <span class="footer-separator">|</span>
+          <a href="projects.html">Projects</a>
+          <span class="footer-separator">|</span>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-footer-dark">
+          <button id="mobileDarkToggle" class="mobile-dark-toggle-footer" aria-label="Dark mode">
+            <i class="fas fa-moon"></i> Dark Mode
+          </button>
+        </div>
+      </div>
+
       <div class="footer-content">
         <div class="footer-social">
           <a href="mailto:parillajohnphilip2@gmail.com" class="footer-social-link" aria-label="Email">
